@@ -1,0 +1,10 @@
+No Prologue was run  Wed Apr  9 11:51:13 CEST 2014 
+mpiexec_mpt error: Need 16 cores but have only 2 slots left in PBS_NODEFILE.
+Start Epilogue v3.0.1 Wed Apr  9 11:51:13 CEST 2014 
+destination queue: workq
+clean up
+r6i6n14: vm.drop_caches = 3
+r6i6n14: vm.drop_caches = 3
+r6i6n14: Linux
+r6i6n14: Linux
+End Epilogue v3.0.1 Wed Apr  9 11:51:15 CEST 2014 

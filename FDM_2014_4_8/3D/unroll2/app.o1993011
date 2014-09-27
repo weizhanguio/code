@@ -1,0 +1,42 @@
+No Prologue was run  Wed Apr  9 12:24:29 CEST 2014 
+---------3D unroll 2 version----------
+100 intervals in space(X,Y,Z), 3000 intervals in time 
+
+unroll 2: x_N:  100, t_N:  3000 ,time 4957.69 seconds. Norm_num  5.395130e+04 
+
+Start Epilogue v3.0.1 Wed Apr  9 13:47:41 CEST 2014 
+destination queue: workq
+clean up
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: vm.drop_caches = 3
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+r5i3n16: Linux
+End Epilogue v3.0.1 Wed Apr  9 13:47:48 CEST 2014 

@@ -1,0 +1,39 @@
+No Prologue was run  Fri Apr 11 21:54:39 CEST 2014 
+x_N: 100,y_N: 200, z_N: 200, t_N: 3000, numtasks 16,threads 4, total 64,time 179.82 secs, Norm_n: 1.084457e+05 
+
+Start Epilogue v3.0.1 Fri Apr 11 21:57:45 CEST 2014 
+destination queue: workq
+clean up
+r5i5n0: vm.drop_caches = 3
+r5i5n3: vm.drop_caches = 3
+r5i5n1: vm.drop_caches = 3
+r5i5n2: vm.drop_caches = 3
+r5i5n1: vm.drop_caches = 3
+r5i5n0: vm.drop_caches = 3
+r5i5n3: vm.drop_caches = 3
+r5i5n2: vm.drop_caches = 3
+r5i5n1: vm.drop_caches = 3
+r5i5n0: vm.drop_caches = 3
+r5i5n2: vm.drop_caches = 3
+r5i5n3: vm.drop_caches = 3
+r5i5n1: vm.drop_caches = 3
+r5i5n0: vm.drop_caches = 3
+r5i5n2: vm.drop_caches = 3
+r5i5n3: vm.drop_caches = 3
+r5i5n0: Linux
+r5i5n0: Linux
+r5i5n0: Linux
+r5i5n0: Linux
+r5i5n2: Linux
+r5i5n2: Linux
+r5i5n2: Linux
+r5i5n2: Linux
+r5i5n1: Linux
+r5i5n1: Linux
+r5i5n1: Linux
+r5i5n1: Linux
+r5i5n3: Linux
+r5i5n3: Linux
+r5i5n3: Linux
+r5i5n3: Linux
+End Epilogue v3.0.1 Fri Apr 11 21:57:48 CEST 2014 

@@ -1,0 +1,42 @@
+No Prologue was run  Thu Apr 10 17:46:12 CEST 2014 
+---------AVX version----------
+4000 intervals in space, 40000 intervals in time 
+
+AVX:x_N:   4000, t_N:  40000   ,Norm_n:  1.264709e+04, timeusage is 1649.35 seconds
+
+Start Epilogue v3.0.1 Thu Apr 10 18:13:54 CEST 2014 
+destination queue: workq
+clean up
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: vm.drop_caches = 3
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+r6i5n1: Linux
+End Epilogue v3.0.1 Thu Apr 10 18:14:01 CEST 2014 

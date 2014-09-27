@@ -1,0 +1,42 @@
+No Prologue was run  Thu Apr 10 21:56:26 CEST 2014 
+---------3D AVX version----------
+100 intervals in space(X,Y,Z), 3000 intervals in time 
+
+x_N:  100, t_N:  3000 ,time 2185.47 seconds. Norm_num  5.395130e+04 
+
+Start Epilogue v3.0.1 Thu Apr 10 22:33:04 CEST 2014 
+destination queue: workq
+clean up
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+r6i4n17: Linux
+End Epilogue v3.0.1 Thu Apr 10 22:33:11 CEST 2014 

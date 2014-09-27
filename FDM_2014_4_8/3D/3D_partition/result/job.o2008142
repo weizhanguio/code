@@ -1,0 +1,519 @@
+No Prologue was run  Sat Apr 12 07:42:05 CEST 2014 
+x_N: 400,y_N: 800, z_N: 800, t_N: 3000, numtasks 256,threads 16, total 4096,time 213.89 secs, Norm_n: 4.828773e+02 
+
+Start Epilogue v3.0.1 Sat Apr 12 07:45:59 CEST 2014 
+destination queue: workq
+clean up
+r5i5n3: vm.drop_caches = 3
+r5i6n14: vm.drop_caches = 3
+r5i4n14: vm.drop_caches = 3
+r5i5n0: vm.drop_caches = 3
+r5i5n6: vm.drop_caches = 3
+r5i6n9: vm.drop_caches = 3
+r5i4n17: vm.drop_caches = 3
+r5i6n16: vm.drop_caches = 3
+r5i6n17: vm.drop_caches = 3
+r5i7n3: vm.drop_caches = 3
+r5i6n1: vm.drop_caches = 3
+r5i5n4: vm.drop_caches = 3
+r5i4n15: vm.drop_caches = 3
+r5i4n13: vm.drop_caches = 3
+r5i7n2: vm.drop_caches = 3
+r5i5n17: vm.drop_caches = 3
+r5i5n5: vm.drop_caches = 3
+r5i7n1: vm.drop_caches = 3
+r5i7n4: vm.drop_caches = 3
+r5i6n8: vm.drop_caches = 3
+r5i6n13: vm.drop_caches = 3
+r5i5n2: vm.drop_caches = 3
+r5i6n15: vm.drop_caches = 3
+r5i6n11: vm.drop_caches = 3
+r5i4n16: vm.drop_caches = 3
+r5i6n0: vm.drop_caches = 3
+r5i5n8: vm.drop_caches = 3
+r5i6n10: vm.drop_caches = 3
+r5i5n1: vm.drop_caches = 3
+r5i6n12: vm.drop_caches = 3
+r5i7n0: vm.drop_caches = 3
+r5i5n7: vm.drop_caches = 3
+r5i7n17: vm.drop_caches = 3
+r5i7n8: vm.drop_caches = 3
+r5i7n6: vm.drop_caches = 3
+r5i7n7: vm.drop_caches = 3
+r6i0n1: vm.drop_caches = 3
+r5i7n14: vm.drop_caches = 3
+r5i7n10: vm.drop_caches = 3
+r6i0n4: vm.drop_caches = 3
+r6i0n0: vm.drop_caches = 3
+r5i7n16: vm.drop_caches = 3
+r6i0n11: vm.drop_caches = 3
+r6i1n0: vm.drop_caches = 3
+r5i7n9: vm.drop_caches = 3
+r5i7n13: vm.drop_caches = 3
+r6i0n13: vm.drop_caches = 3
+r6i0n9: vm.drop_caches = 3
+r6i0n8: vm.drop_caches = 3
+r5i7n5: vm.drop_caches = 3
+r6i0n2: vm.drop_caches = 3
+r5i7n15: vm.drop_caches = 3
+r6i0n10: vm.drop_caches = 3
+r6i0n5: vm.drop_caches = 3
+r6i0n7: vm.drop_caches = 3
+r6i0n15: vm.drop_caches = 3
+r6i0n6: vm.drop_caches = 3
+r6i0n3: vm.drop_caches = 3
+r6i0n17: vm.drop_caches = 3
+r6i0n16: vm.drop_caches = 3
+r5i7n12: vm.drop_caches = 3
+r5i7n11: vm.drop_caches = 3
+r6i0n12: vm.drop_caches = 3
+r6i0n14: vm.drop_caches = 3
+r6i1n12: vm.drop_caches = 3
+r6i1n1: vm.drop_caches = 3
+r6i1n2: vm.drop_caches = 3
+r6i1n6: vm.drop_caches = 3
+r6i1n9: vm.drop_caches = 3
+r6i1n5: vm.drop_caches = 3
+r6i1n4: vm.drop_caches = 3
+r6i1n8: vm.drop_caches = 3
+r6i1n14: vm.drop_caches = 3
+r6i1n15: vm.drop_caches = 3
+r6i1n10: vm.drop_caches = 3
+r6i1n7: vm.drop_caches = 3
+r6i1n11: vm.drop_caches = 3
+r6i2n5: vm.drop_caches = 3
+r6i1n13: vm.drop_caches = 3
+r6i2n9: vm.drop_caches = 3
+r6i2n3: vm.drop_caches = 3
+r6i2n1: vm.drop_caches = 3
+r6i2n2: vm.drop_caches = 3
+r6i2n4: vm.drop_caches = 3
+r6i2n7: vm.drop_caches = 3
+r6i2n8: vm.drop_caches = 3
+r6i1n3: vm.drop_caches = 3
+r6i2n12: vm.drop_caches = 3
+r6i2n6: vm.drop_caches = 3
+r6i1n16: vm.drop_caches = 3
+r6i1n17: vm.drop_caches = 3
+r6i2n0: vm.drop_caches = 3
+r6i2n13: vm.drop_caches = 3
+r6i2n14: vm.drop_caches = 3
+r6i2n11: vm.drop_caches = 3
+r6i2n10: vm.drop_caches = 3
+r6i2n15: vm.drop_caches = 3
+r6i3n10: vm.drop_caches = 3
+r6i3n8: vm.drop_caches = 3
+r6i3n9: vm.drop_caches = 3
+r6i2n17: vm.drop_caches = 3
+r6i2n16: vm.drop_caches = 3
+r6i4n1: vm.drop_caches = 3
+r6i3n11: vm.drop_caches = 3
+r6i3n14: vm.drop_caches = 3
+r6i3n15: vm.drop_caches = 3
+r6i4n0: vm.drop_caches = 3
+r6i3n17: vm.drop_caches = 3
+r6i3n12: vm.drop_caches = 3
+r6i3n13: vm.drop_caches = 3
+r6i4n2: vm.drop_caches = 3
+r6i5n0: vm.drop_caches = 3
+r6i4n6: vm.drop_caches = 3
+r6i4n17: vm.drop_caches = 3
+r6i4n8: vm.drop_caches = 3
+r6i4n7: vm.drop_caches = 3
+r6i5n6: vm.drop_caches = 3
+r6i5n3: vm.drop_caches = 3
+r6i4n3: vm.drop_caches = 3
+r6i4n5: vm.drop_caches = 3
+r6i5n5: vm.drop_caches = 3
+r6i5n9: vm.drop_caches = 3
+r6i5n12: vm.drop_caches = 3
+r6i3n16: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i4n4: vm.drop_caches = 3
+r6i5n13: vm.drop_caches = 3
+r6i5n15: vm.drop_caches = 3
+r7i0n0: vm.drop_caches = 3
+r7i0n1: vm.drop_caches = 3
+r7i0n9: vm.drop_caches = 3
+r7i0n12: vm.drop_caches = 3
+r7i0n2: vm.drop_caches = 3
+r6i6n5: vm.drop_caches = 3
+r6i6n4: vm.drop_caches = 3
+r7i0n5: vm.drop_caches = 3
+r7i0n11: vm.drop_caches = 3
+r7i0n13: vm.drop_caches = 3
+r7i0n7: vm.drop_caches = 3
+r7i0n4: vm.drop_caches = 3
+r7i0n8: vm.drop_caches = 3
+r7i0n3: vm.drop_caches = 3
+r7i0n6: vm.drop_caches = 3
+r6i7n8: vm.drop_caches = 3
+r7i0n17: vm.drop_caches = 3
+r7i0n14: vm.drop_caches = 3
+r7i0n10: vm.drop_caches = 3
+r6i7n17: vm.drop_caches = 3
+r7i1n3: vm.drop_caches = 3
+r7i1n1: vm.drop_caches = 3
+r7i1n2: vm.drop_caches = 3
+r7i1n4: vm.drop_caches = 3
+r7i1n0: vm.drop_caches = 3
+r7i0n15: vm.drop_caches = 3
+r7i0n16: vm.drop_caches = 3
+r6i6n8: vm.drop_caches = 3
+r6i6n6: vm.drop_caches = 3
+r6i5n17: vm.drop_caches = 3
+r6i6n7: vm.drop_caches = 3
+r6i6n12: vm.drop_caches = 3
+r7i1n6: vm.drop_caches = 3
+r7i1n5: vm.drop_caches = 3
+r7i1n8: vm.drop_caches = 3
+r7i1n11: vm.drop_caches = 3
+r7i1n9: vm.drop_caches = 3
+r7i1n7: vm.drop_caches = 3
+r7i1n16: vm.drop_caches = 3
+r7i1n13: vm.drop_caches = 3
+r7i1n12: vm.drop_caches = 3
+r7i1n14: vm.drop_caches = 3
+r7i1n10: vm.drop_caches = 3
+r7i1n17: vm.drop_caches = 3
+r7i3n0: vm.drop_caches = 3
+r7i3n4: vm.drop_caches = 3
+r7i3n1: vm.drop_caches = 3
+r7i3n2: vm.drop_caches = 3
+r7i3n7: vm.drop_caches = 3
+r7i3n9: vm.drop_caches = 3
+r7i3n3: vm.drop_caches = 3
+r7i1n15: vm.drop_caches = 3
+r7i3n6: vm.drop_caches = 3
+r7i3n12: vm.drop_caches = 3
+r7i3n10: vm.drop_caches = 3
+r7i3n14: vm.drop_caches = 3
+r7i3n11: vm.drop_caches = 3
+r7i3n5: vm.drop_caches = 3
+r7i3n15: vm.drop_caches = 3
+r7i3n17: vm.drop_caches = 3
+r7i3n13: vm.drop_caches = 3
+r7i3n8: vm.drop_caches = 3
+r7i3n16: vm.drop_caches = 3
+r7i4n8: vm.drop_caches = 3
+r7i4n9: vm.drop_caches = 3
+r7i4n11: vm.drop_caches = 3
+r7i4n15: vm.drop_caches = 3
+r7i4n13: vm.drop_caches = 3
+r7i4n12: vm.drop_caches = 3
+r7i4n10: vm.drop_caches = 3
+r7i5n7: vm.drop_caches = 3
+r7i5n0: vm.drop_caches = 3
+r7i4n14: vm.drop_caches = 3
+r7i5n5: vm.drop_caches = 3
+r7i4n16: vm.drop_caches = 3
+r7i5n8: vm.drop_caches = 3
+r7i5n3: vm.drop_caches = 3
+r7i4n17: vm.drop_caches = 3
+r7i5n6: vm.drop_caches = 3
+r7i5n1: vm.drop_caches = 3
+r7i5n4: vm.drop_caches = 3
+r7i5n12: vm.drop_caches = 3
+r7i5n2: vm.drop_caches = 3
+r7i5n10: vm.drop_caches = 3
+r7i7n0: vm.drop_caches = 3
+r7i5n11: vm.drop_caches = 3
+r7i5n16: vm.drop_caches = 3
+r7i5n14: vm.drop_caches = 3
+r7i5n13: vm.drop_caches = 3
+r7i5n9: vm.drop_caches = 3
+r7i6n16: vm.drop_caches = 3
+r7i5n15: vm.drop_caches = 3
+r7i5n17: vm.drop_caches = 3
+r7i7n1: vm.drop_caches = 3
+r7i6n17: vm.drop_caches = 3
+r7i7n2: vm.drop_caches = 3
+r7i7n5: vm.drop_caches = 3
+r7i7n3: vm.drop_caches = 3
+r7i7n4: vm.drop_caches = 3
+r8i0n17: vm.drop_caches = 3
+r8i1n14: vm.drop_caches = 3
+r7i7n8: vm.drop_caches = 3
+r7i7n7: vm.drop_caches = 3
+r7i7n17: vm.drop_caches = 3
+r8i0n8: vm.drop_caches = 3
+r7i7n6: vm.drop_caches = 3
+r8i1n8: vm.drop_caches = 3
+r8i1n11: vm.drop_caches = 3
+r8i2n1: vm.drop_caches = 3
+r8i1n13: vm.drop_caches = 3
+r8i1n17: vm.drop_caches = 3
+r8i1n10: vm.drop_caches = 3
+r8i2n3: vm.drop_caches = 3
+r8i1n15: vm.drop_caches = 3
+r8i1n12: vm.drop_caches = 3
+r8i1n9: vm.drop_caches = 3
+r8i2n0: vm.drop_caches = 3
+r8i2n4: vm.drop_caches = 3
+r8i1n16: vm.drop_caches = 3
+r8i2n9: vm.drop_caches = 3
+r8i2n5: vm.drop_caches = 3
+r8i2n7: vm.drop_caches = 3
+r8i2n8: vm.drop_caches = 3
+r8i2n2: vm.drop_caches = 3
+r8i2n11: vm.drop_caches = 3
+r8i2n10: vm.drop_caches = 3
+r8i2n6: vm.drop_caches = 3
+r8i2n12: vm.drop_caches = 3
+r5i6n16: Linux
+r5i5n7: Linux
+r5i6n17: Linux
+r5i6n15: Linux
+r5i6n9: Linux
+r5i4n14: Linux
+r5i7n4: Linux
+r5i5n2: Linux
+r5i6n14: Linux
+r5i4n16: Linux
+r5i5n5: Linux
+r5i5n3: Linux
+r5i4n17: Linux
+r5i6n8: Linux
+r5i6n12: Linux
+r5i4n15: Linux
+r5i4n13: Linux
+r5i7n3: Linux
+r5i7n1: Linux
+r5i5n8: Linux
+r5i6n1: Linux
+r5i7n2: Linux
+r5i6n11: Linux
+r5i6n13: Linux
+r5i5n1: Linux
+r5i5n4: Linux
+r5i5n0: Linux
+r5i5n17: Linux
+r5i6n0: Linux
+r5i6n10: Linux
+r5i5n6: Linux
+r5i7n0: Linux
+r5i7n6: Linux
+r5i7n8: Linux
+r5i7n5: Linux
+r5i7n7: Linux
+r5i7n10: Linux
+r5i7n12: Linux
+r5i7n14: Linux
+r5i7n13: Linux
+r5i7n9: Linux
+r5i7n11: Linux
+r5i7n16: Linux
+r5i7n17: Linux
+r5i7n15: Linux
+r6i0n0: Linux
+r6i0n1: Linux
+r6i0n3: Linux
+r6i0n8: Linux
+r6i0n7: Linux
+r6i0n5: Linux
+r6i0n10: Linux
+r6i0n9: Linux
+r6i0n13: Linux
+r6i0n12: Linux
+r6i0n11: Linux
+r6i0n17: Linux
+r6i1n0: Linux
+r6i0n15: Linux
+r6i0n2: Linux
+r6i0n6: Linux
+r6i0n4: Linux
+r6i1n1: Linux
+r6i0n16: Linux
+r6i0n14: Linux
+r6i1n13: Linux
+r6i1n5: Linux
+r6i1n3: Linux
+r6i1n6: Linux
+r6i1n12: Linux
+r6i1n10: Linux
+r6i1n4: Linux
+r6i1n15: Linux
+r6i1n7: Linux
+r6i1n11: Linux
+r6i1n2: Linux
+r6i1n14: Linux
+r6i1n9: Linux
+r6i2n4: Linux
+r6i2n2: Linux
+r6i1n17: Linux
+r6i1n8: Linux
+r6i2n10: Linux
+r6i2n6: Linux
+r6i2n8: Linux
+r6i1n16: Linux
+r6i2n7: Linux
+r6i2n3: Linux
+r6i2n0: Linux
+r6i2n1: Linux
+r6i2n14: Linux
+r6i2n5: Linux
+r6i2n9: Linux
+r6i2n11: Linux
+r6i2n13: Linux
+r6i2n12: Linux
+r6i2n15: Linux
+r6i3n8: Linux
+r6i3n10: Linux
+r6i2n17: Linux
+r6i3n12: Linux
+r6i4n1: Linux
+r6i3n9: Linux
+r6i3n14: Linux
+r6i4n3: Linux
+r6i3n16: Linux
+r6i4n6: Linux
+r6i5n0: Linux
+r6i4n8: Linux
+r6i2n16: Linux
+r6i3n11: Linux
+r6i3n13: Linux
+r6i3n15: Linux
+r6i5n12: Linux
+r6i3n17: Linux
+r6i4n0: Linux
+r6i6n4: Linux
+r6i4n7: Linux
+r6i4n4: Linux
+r6i6n6: Linux
+r6i4n2: Linux
+r6i5n3: Linux
+r6i5n9: Linux
+r6i7n8: Linux
+r6i5n13: Linux
+r6i6n12: Linux
+r6i5n7: Linux
+r6i4n5: Linux
+r7i0n0: Linux
+r6i4n17: Linux
+r6i5n17: Linux
+r7i0n1: Linux
+r6i6n5: Linux
+r7i0n3: Linux
+r7i0n2: Linux
+r6i5n5: Linux
+r6i5n6: Linux
+r6i7n17: Linux
+r6i5n15: Linux
+r6i6n7: Linux
+r6i6n8: Linux
+r7i0n7: Linux
+r7i0n4: Linux
+r7i0n12: Linux
+r7i0n5: Linux
+r7i0n17: Linux
+r7i0n8: Linux
+r7i0n9: Linux
+r7i0n15: Linux
+r7i0n6: Linux
+r7i1n6: Linux
+r7i1n9: Linux
+r7i0n11: Linux
+r7i1n1: Linux
+r7i1n4: Linux
+r7i0n13: Linux
+r7i0n14: Linux
+r7i1n13: Linux
+r7i1n11: Linux
+r7i0n10: Linux
+r7i1n2: Linux
+r7i1n5: Linux
+r7i1n17: Linux
+r7i1n8: Linux
+r7i1n14: Linux
+r7i0n16: Linux
+r7i1n10: Linux
+r7i1n0: Linux
+r7i1n16: Linux
+r7i3n3: Linux
+r7i3n1: Linux
+r7i1n3: Linux
+r7i1n7: Linux
+r7i1n12: Linux
+r7i3n0: Linux
+r7i3n8: Linux
+r7i1n15: Linux
+r7i3n7: Linux
+r7i3n5: Linux
+r7i3n4: Linux
+r7i3n2: Linux
+r7i3n15: Linux
+r7i3n6: Linux
+r7i3n9: Linux
+r7i3n10: Linux
+r7i3n12: Linux
+r7i3n16: Linux
+r7i4n12: Linux
+r7i3n11: Linux
+r7i3n13: Linux
+r7i4n8: Linux
+r7i4n10: Linux
+r7i3n14: Linux
+r7i4n11: Linux
+r7i4n16: Linux
+r7i4n14: Linux
+r7i4n15: Linux
+r7i4n13: Linux
+r7i3n17: Linux
+r7i5n0: Linux
+r7i4n9: Linux
+r7i5n8: Linux
+r7i5n2: Linux
+r7i5n9: Linux
+r7i4n17: Linux
+r7i5n3: Linux
+r7i5n10: Linux
+r7i6n16: Linux
+r7i5n1: Linux
+r7i5n11: Linux
+r7i5n5: Linux
+r7i7n0: Linux
+r7i5n13: Linux
+r7i5n16: Linux
+r7i5n4: Linux
+r7i7n2: Linux
+r7i5n17: Linux
+r7i5n6: Linux
+r7i5n12: Linux
+r7i5n7: Linux
+r7i5n14: Linux
+r7i7n3: Linux
+r7i7n1: Linux
+r7i5n15: Linux
+r7i6n17: Linux
+r8i0n17: Linux
+r7i7n4: Linux
+r7i7n5: Linux
+r7i7n17: Linux
+r7i7n7: Linux
+r8i0n8: Linux
+r7i7n8: Linux
+r7i7n6: Linux
+r8i1n11: Linux
+r8i1n9: Linux
+r8i1n10: Linux
+r8i1n8: Linux
+r8i1n12: Linux
+r8i1n13: Linux
+r8i1n17: Linux
+r8i1n16: Linux
+r8i1n14: Linux
+r8i2n4: Linux
+r8i2n7: Linux
+r8i2n6: Linux
+r8i2n1: Linux
+r8i2n0: Linux
+r8i2n3: Linux
+r8i2n11: Linux
+r8i1n15: Linux
+r8i2n2: Linux
+r8i2n12: Linux
+r8i2n8: Linux
+r8i2n9: Linux
+r8i2n10: Linux
+r8i2n5: Linux
+End Epilogue v3.0.1 Sat Apr 12 07:46:16 CEST 2014 

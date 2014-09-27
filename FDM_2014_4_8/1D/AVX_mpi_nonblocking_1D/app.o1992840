@@ -1,0 +1,15 @@
+No Prologue was run  Wed Apr  9 11:49:45 CEST 2014 
+Number of MPI procs=2
+---------MPI non-blocking AVX Version----------
+1000 intervals in space, 10000 intervals in time 
+
+x_N: 1000, t_N: 10000, numtasks 2  ,Norm_n: 3.160666e+03, timeusage is  10.42 seconds
+
+Start Epilogue v3.0.1 Wed Apr  9 11:50:02 CEST 2014 
+destination queue: workq
+clean up
+r6i6n14: vm.drop_caches = 3
+r6i6n14: vm.drop_caches = 3
+r6i6n14: Linux
+r6i6n14: Linux
+End Epilogue v3.0.1 Wed Apr  9 11:50:04 CEST 2014 

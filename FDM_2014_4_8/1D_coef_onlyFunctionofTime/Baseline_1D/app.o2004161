@@ -1,0 +1,44 @@
+No Prologue was run  Fri Apr 11 12:52:36 CEST 2014 
+---------baseline version---coef(t)-------
+216000 intervals in space, 3000 intervals in time 
+
+error, do not satisfy the stability requirement.
+
+x_N:  216000, t_N:   3000   ,Norm_n:  -nan, timeusage is 1062.25 seconds
+
+Start Epilogue v3.0.1 Fri Apr 11 13:11:07 CEST 2014 
+destination queue: workq
+clean up
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: vm.drop_caches = 3
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+r8i4n11: Linux
+End Epilogue v3.0.1 Fri Apr 11 13:11:14 CEST 2014 

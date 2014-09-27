@@ -1,0 +1,18 @@
+No Prologue was run  Wed Apr  9 15:45:46 CEST 2014 
+omplace information:
+   4 threads, thread model is intel
+   placement file /tmp/omplace.file.21062:
+    firsttask cpu=0 
+    thread oncpu=0 cpu=1,11,12 noplace=1  exact
+------omp  AVX version----------
+4000 intervals in space, 40000 intervals in time 
+
+Number of threads = 4
+x_N: 4000, t_N: 40000 ,Norm_n:  1.264709e+04,threadNum: 4, timeusage is 271.14 seconds
+
+Start Epilogue v3.0.1 Wed Apr  9 15:50:18 CEST 2014 
+destination queue: workq
+clean up
+r6i5n0: vm.drop_caches = 3
+r6i5n0: Linux
+End Epilogue v3.0.1 Wed Apr  9 15:50:19 CEST 2014 

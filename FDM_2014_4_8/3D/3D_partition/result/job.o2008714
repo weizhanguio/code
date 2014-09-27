@@ -1,0 +1,23 @@
+No Prologue was run  Sat Apr 12 10:42:44 CEST 2014 
+x_N: 100,y_N: 100, z_N: 200, t_N: 3000, numtasks 8,threads 4, total 32,time 179.91 secs, Norm_n: 7.649042e+04 time_com  0.36, time_pack  3.72
+
+Start Epilogue v3.0.1 Sat Apr 12 10:45:49 CEST 2014 
+destination queue: workq
+clean up
+r10i0n17: vm.drop_caches = 3
+r10i0n16: vm.drop_caches = 3
+r10i0n17: vm.drop_caches = 3
+r10i0n16: vm.drop_caches = 3
+r10i0n17: vm.drop_caches = 3
+r10i0n16: vm.drop_caches = 3
+r10i0n17: vm.drop_caches = 3
+r10i0n16: vm.drop_caches = 3
+r10i0n16: Linux
+r10i0n16: Linux
+r10i0n16: Linux
+r10i0n16: Linux
+r10i0n17: Linux
+r10i0n17: Linux
+r10i0n17: Linux
+r10i0n17: Linux
+End Epilogue v3.0.1 Sat Apr 12 10:45:52 CEST 2014 

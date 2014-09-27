@@ -1,0 +1,135 @@
+No Prologue was run  Fri Apr 11 21:59:46 CEST 2014 
+x_N: 200,y_N: 400, z_N: 400, t_N: 3000, numtasks 64,threads 8, total 512,time 182.27 secs, Norm_n: 3.082636e+05 
+
+Start Epilogue v3.0.1 Fri Apr 11 22:02:56 CEST 2014 
+destination queue: workq
+clean up
+r10i0n0: vm.drop_caches = 3
+r10i0n4: vm.drop_caches = 3
+r10i0n9: vm.drop_caches = 3
+r10i0n5: vm.drop_caches = 3
+r10i0n6: vm.drop_caches = 3
+r10i0n8: vm.drop_caches = 3
+r10i0n1: vm.drop_caches = 3
+r10i0n15: vm.drop_caches = 3
+r10i0n13: vm.drop_caches = 3
+r10i0n12: vm.drop_caches = 3
+r10i0n14: vm.drop_caches = 3
+r10i0n2: vm.drop_caches = 3
+r10i0n10: vm.drop_caches = 3
+r10i0n7: vm.drop_caches = 3
+r10i0n11: vm.drop_caches = 3
+r10i0n3: vm.drop_caches = 3
+r10i0n4: vm.drop_caches = 3
+r10i0n9: vm.drop_caches = 3
+r10i0n6: vm.drop_caches = 3
+r10i0n1: vm.drop_caches = 3
+r10i0n14: vm.drop_caches = 3
+r10i0n15: vm.drop_caches = 3
+r10i0n5: vm.drop_caches = 3
+r10i0n12: vm.drop_caches = 3
+r10i0n8: vm.drop_caches = 3
+r10i0n0: vm.drop_caches = 3
+r10i0n2: vm.drop_caches = 3
+r10i0n10: vm.drop_caches = 3
+r10i0n13: vm.drop_caches = 3
+r10i0n11: vm.drop_caches = 3
+r10i0n3: vm.drop_caches = 3
+r10i0n7: vm.drop_caches = 3
+r10i1n11: vm.drop_caches = 3
+r10i0n17: vm.drop_caches = 3
+r10i1n8: vm.drop_caches = 3
+r10i1n13: vm.drop_caches = 3
+r10i0n16: vm.drop_caches = 3
+r10i1n12: vm.drop_caches = 3
+r10i1n9: vm.drop_caches = 3
+r10i1n10: vm.drop_caches = 3
+r10i1n15: vm.drop_caches = 3
+r10i3n15: vm.drop_caches = 3
+r10i3n14: vm.drop_caches = 3
+r10i1n17: vm.drop_caches = 3
+r10i3n16: vm.drop_caches = 3
+r10i1n8: vm.drop_caches = 3
+r10i0n17: vm.drop_caches = 3
+r10i1n16: vm.drop_caches = 3
+r10i1n14: vm.drop_caches = 3
+r10i1n11: vm.drop_caches = 3
+r10i1n13: vm.drop_caches = 3
+r10i0n16: vm.drop_caches = 3
+r10i1n12: vm.drop_caches = 3
+r10i1n10: vm.drop_caches = 3
+r10i1n9: vm.drop_caches = 3
+r10i3n17: vm.drop_caches = 3
+r10i3n15: vm.drop_caches = 3
+r10i1n15: vm.drop_caches = 3
+r10i3n14: vm.drop_caches = 3
+r10i1n17: vm.drop_caches = 3
+r10i3n16: vm.drop_caches = 3
+r10i1n16: vm.drop_caches = 3
+r10i1n14: vm.drop_caches = 3
+r10i3n17: vm.drop_caches = 3
+r10i0n0: Linux
+r10i0n0: Linux
+r10i0n10: Linux
+r10i0n10: Linux
+r10i0n7: Linux
+r10i0n7: Linux
+r10i0n5: Linux
+r10i0n5: Linux
+r10i0n8: Linux
+r10i0n8: Linux
+r10i0n13: Linux
+r10i0n13: Linux
+r10i0n2: Linux
+r10i0n2: Linux
+r10i0n12: Linux
+r10i0n12: Linux
+r10i0n3: Linux
+r10i0n3: Linux
+r10i0n11: Linux
+r10i0n11: Linux
+r10i0n4: Linux
+r10i0n4: Linux
+r10i0n14: Linux
+r10i0n14: Linux
+r10i0n6: Linux
+r10i0n6: Linux
+r10i0n15: Linux
+r10i0n15: Linux
+r10i0n1: Linux
+r10i0n1: Linux
+r10i0n9: Linux
+r10i0n9: Linux
+r10i0n16: Linux
+r10i0n16: Linux
+r10i0n17: Linux
+r10i0n17: Linux
+r10i1n8: Linux
+r10i1n8: Linux
+r10i1n9: Linux
+r10i1n9: Linux
+r10i1n11: Linux
+r10i1n11: Linux
+r10i3n15: Linux
+r10i3n15: Linux
+r10i1n10: Linux
+r10i1n10: Linux
+r10i1n15: Linux
+r10i1n15: Linux
+r10i1n13: Linux
+r10i1n13: Linux
+r10i1n17: Linux
+r10i1n17: Linux
+r10i3n14: Linux
+r10i1n16: Linux
+r10i3n14: Linux
+r10i1n16: Linux
+r10i1n12: Linux
+r10i1n12: Linux
+r10i1n14: Linux
+r10i1n14: Linux
+r10i3n17: Linux
+r10i3n17: Linux
+r10i3n16: Linux
+r10i3n16: Linux
+End Epilogue v3.0.1 Fri Apr 11 22:03:02 CEST 2014 

@@ -1,0 +1,332 @@
+/*
+  purpuse: 3D finite difference scheme for  time fractional diffusion equation
+  reference paper:Sun Hongguang  "finite difference scheme for variable-order time fractional diffusion equation", page 1250085-12, example 1.
+  date: 2013.9.2
+  author: Zhang Wei
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<malloc.h>
+#include<time.h>  
+#include<immintrin.h>
+#define  K             0.00001                   /* diffusion efficient*/
+#define  x_start       0.0                    /*starting point of space*/
+#define  x_end         1                      /*end point of space*/
+#define  t_start       0.0                    /*starting point of time*/
+#define  t_end         0.1     	       /*end point of time*/
+#define  L           (x_end-x_start)
+
+ 
+typedef double real;	
+
+
+real alpha=0.9;
+
+real q( real x, real y, real z,real t)  /*source term in eq.58*/
+{
+  real q_value;
+  
+  q_value=tgamma(2+1)/tgamma(2-alpha+1) *pow(t,2-alpha)*(x-L)*(x-L)*(y-L)*(y-L)*(z-L)*(z-L)-2.0*t*t*K*(  (x-L)*(y-L)*(y-L)*(z-L)*(z-L)+(x-L)*(x-L)*(z-L)*(z-L)*(y-L)+(x-L)*(x-L)*(y-L)*(y-L)*(z-L)   );
+  return q_value;
+}
+
+ 
+int 
+main(int nargs, char** args)
+{
+	
+	
+  int i;
+  int j;
+  int k;
+  int p;
+  int n;
+  int m;	              	
+  clock_t begin;
+  clock_t finish;
+  int  x_N,y_N,z_N, t_N;
+  x_N=50;                   //number of space intervals
+  y_N=50;                    
+  z_N=50;                    
+  /*we choose x_N=y_N=z_N*/
+  t_N=200;                   //number of time intervals
+  
+
+  int BlockWidth_x=4; 
+  int BlockWidth_t=4; 
+  int nBlock_x=(x_N-1)/BlockWidth_x;
+  int nBlock_t=(t_N-1)/BlockWidth_t;
+  int rem_x=(x_N-1)%BlockWidth_x;
+  int rem_t=(t_N-1)%BlockWidth_t;
+ 
+  if(nargs>1){
+    x_N=atof(args[1]);
+    y_N=atof(args[1]);
+    z_N=atof(args[1]);
+    t_N=atof(args[2]);
+
+  }
+    
+ 
+  real   dh;        dh= ((x_end-x_start)/x_N);          // space step
+  /*we choose dx=dy=dz=dh*/
+  real   dt;        dt= ((t_end-t_start)/t_N);          // time step
+  
+  
+  printf("---------3D unroll 4 version----------\n");
+  printf("%d intervals in space(X,Y,Z), %d intervals in time \n\n",x_N, t_N);  
+  /*x_N+1 points in space, t_N+1 points in time*/
+	
+  printf("dh is %f, dt is %6.2f\n",dh,dt);
+  
+
+  real A=pow(dt,-alpha)/tgamma(2-alpha);
+  real B=K/A/dh/dh;
+
+  real *u=(real*)_mm_malloc((x_N+1 )*(y_N+1 )*(z_N+1 )*(t_N+1)*sizeof(real),64);   
+  real *coeff=(real*)_mm_malloc((t_N+1)*sizeof(real),64);
+ 
+   
+  // printf("use memory  %f GB\n",1.0*(x_N*y_N*z_N*t_N)*sizeof(real)/1e9);
+
+  real *sum=(real*)calloc((x_N+1 )*(y_N+1 )*(z_N+1),sizeof(real));
+  real *sum1=(real*)calloc((x_N+1 )*(y_N+1 )*(z_N+1),sizeof(real));
+  real *sum2=(real*)calloc((x_N+1 )*(y_N+1 )*(z_N+1),sizeof(real));
+  real *sum3=(real*)calloc((x_N+1 )*(y_N+1 )*(z_N+1),sizeof(real));
+ 
+
+  __m256d  s1;
+  __m256d  s2;
+  __m256d  s3;
+  __m256d  s4;
+
+  __m256d  load_u1;
+  __m256d  load_u2;
+  __m256d  load_u3;
+  __m256d  load_u4;
+ 
+  __m256d  mulp1;
+  __m256d  mulp2;
+  __m256d  mulp3;
+  __m256d  mulp4;
+
+  __m256d  load_coeff;
+ 
+
+ real* outputbuffer=(real*)_mm_malloc(16*sizeof(real),64);
+  for(i=0;i<16;i++)
+    outputbuffer[i]=0.0;
+
+#define  u(x,y,z,t)   u[(x)*(y_N+1)*(z_N+1)*(t_N+1)+(y)*(z_N+1)*(t_N+1)+(z)*(t_N+1) +(t) ]
+#define  coeff(x)     coeff[x] 
+
+#define  sum(x,y,z)     sum[(x)*(y_N+1)*(z_N+1)+(y)*(z_N+1)+(z) ]
+#define  sum1(x,y,z)    sum1[(x)*(y_N+1)*(z_N+1)+(y)*(z_N+1)+(z) ] 
+#define  sum2(x,y,z)    sum2[(x)*(y_N+1)*(z_N+1)+(y)*(z_N+1)+(z) ]
+#define  sum3(x,y,z)    sum3[(x)*(y_N+1)*(z_N+1)+(y)*(z_N+1)+(z) ]
+  begin=clock();
+
+  for(i=0;i<=t_N;i++)
+    coeff(i)=pow(i+2,1-alpha)+pow(i,1-alpha)-2.0*pow(i+1,1-alpha);
+			
+  for(i=0;i<(x_N+1 )*(y_N+1 )*(z_N+1 )*(t_N+1);i++)
+    u[i]=0.0;     
+
+
+
+  /*boundary value*/	  
+  for(j=0;j<=y_N;j++)             
+    for(k=0;k<=z_N;k++)
+      for(p=0;p<=t_N;p++)
+	{
+	  u(0,j,k,p)=0.0;
+	  u(x_N,j,k,p)=0.0;
+	}
+	
+  for(i=0;i<=x_N;i++)            
+    for(k=0;k<=z_N;k++)
+      for(p=0;p<=t_N;p++)
+	{
+	  u(i,0,k,p)=0.0;
+	  u(i,y_N,k,p)=0.0;
+	}
+
+  for(i=0;i<=x_N;i++)             
+    for(j=0;j<=y_N;j++)
+      for(p=0;p<=t_N;p++)
+	{
+	  u(i,j,0,p)=0.0;
+	  u(i,j,z_N,p)=0.0;
+	}
+
+
+  /*initial value*/
+  for(i=0;i<=x_N;i++)             
+    for(j=0;j<=y_N;j++)
+      for(k=0;k<=z_N;k++)
+	{
+	  u(i,j,k,0)=0.0;
+	 
+	}
+
+
+  /*compute u(:,:,:,1)*/
+            
+  for (i=1; i<=x_N-1; i++)     
+    for (j=1; j<=y_N-1; j++)
+      for(k=1;k<=z_N-1;k++)
+	{
+                
+	  u(i,j,k,1)= (1-6.0*B)*u(i,j,k,0)+ B*(u(i+1,j,k,0)+u(i-1,j,k,0)+u(i,j+1,k,0)+u(i,j-1,k,0)+u(i,j,k+1,0)+u(i,j,k-1,0))+q(i*dh,j*dh,k*dh,1.0*dt)/A;                              
+	}
+
+  
+  /*compute other u*/ 
+    	   
+  for (n=1; n<=nBlock_t*BlockWidth_t; n+=4)  
+    {            
+      for (i=1; i<=nBlock_x*BlockWidth_x; i+=4)     
+	for (j=1; j<=y_N-1; j++)
+	  for(k=1;k<=z_N-1;k++)
+	    {
+               s1=_mm256_setzero_pd();
+               s2=_mm256_setzero_pd();
+               s3=_mm256_setzero_pd();
+               s4=_mm256_setzero_pd();
+  
+	      sum(i,j,k)=0.0;
+	      sum1(i,j,k)=0.0;  
+              sum2(i,j,k)=0.0; 
+              sum3(i,j,k)=0.0; 
+	      for(p=1; p<=n-1; p++)
+		{
+		  //sum(i,j,k) +=coeff(n-p)*u(i,j,k,p);
+		  //sum1(i,j,k) +=coeff(n+1-p)*u(i,j,k,p);
+                  //sum2(i,j,k) +=coeff(n+2-p)*u(i,j,k,p);
+                  //sum3(i,j,k) +=coeff(n+3-p)*u(i,j,k,p);
+
+                load_coeff=_mm256_load_pd((real*)(coeff+(n-p)));/*u(i,:) */
+		 
+//#define  u(x,y,z,t)   u[(x)*(y_N+1)*(z_N+1)*(t_N+1)+(y)*(z_N+1)*(t_N+1)+(z)*(t_N+1) +(t) ]
+
+  load_u1= _mm256_broadcast_sd(u+(i)*(y_N+1)*(z_N+1)*(t_N+1)+(j)*(z_N+1)*(t_N+1)+(k)*(t_N+1) +(p));
+  load_u2= _mm256_broadcast_sd(u+(i+1)*(y_N+1)*(z_N+1)*(t_N+1)+(j)*(z_N+1)*(t_N+1)+(k)*(t_N+1) +(p));
+  load_u3= _mm256_broadcast_sd(u+(i+2)*(y_N+1)*(z_N+1)*(t_N+1)+(j)*(z_N+1)*(t_N+1)+(k)*(t_N+1) +(p));
+  load_u4= _mm256_broadcast_sd(u+(i+3)*(y_N+1)*(z_N+1)*(t_N+1)+(j)*(z_N+1)*(t_N+1)+(k)*(t_N+1) +(p));
+			       
+	mulp1=_mm256_mul_pd(load_u1 ,load_coeff);
+        mulp2=_mm256_mul_pd(load_u2 ,load_coeff);
+        mulp3=_mm256_mul_pd(load_u3 ,load_coeff);
+        mulp4=_mm256_mul_pd(load_u4 ,load_coeff);	   
+          
+        s1=_mm256_add_pd(s1,mulp1);  /*i*/
+        s2=_mm256_add_pd(s2,mulp2);  /*i+1*/
+        s3=_mm256_add_pd(s3,mulp3); /*i+2*/
+        s4=_mm256_add_pd(s4,mulp4);   /*i+3*/
+  
+      _mm256_store_pd(&outputbuffer[0],s1);
+      _mm256_store_pd(&outputbuffer[4],s2);
+      _mm256_store_pd(&outputbuffer[(8)*4],s3);
+      _mm256_store_pd(&outputbuffer[12],s4);   
+
+		}
+
+          sum(i,j,k)= outputbuffer[0];      
+          sum1(i,j,k)= outputbuffer[1];
+          sum2(i,j,k)= outputbuffer[2];
+          sum3(i,j,k)= outputbuffer[4]; 
+          sum(i+1,j,k)= outputbuffer[0];      
+          sum1(i+1,j,k)= outputbuffer[1];
+          sum2(i+1,j,k)= outputbuffer[2];
+          sum3(i+1,j,k)= outputbuffer[4]; 
+            for(i=0;i) 
+
+
+
+          
+	      u(i,j,k,n+1)= (1-6.0*B)*u(i,j,k,n)-sum(i,j,k) +u(i,j,k,0)*(pow(n+1,1-alpha)-pow(n,1-alpha))-u(i,j,k,n)*(pow(2,1-alpha)- pow(1,1-alpha))+B*(u(i+1,j,k,n)+u(i-1,j,k,n)+u(i,j+1,k,n)+u(i,j-1,k,n)+u(i,j,k+1,n)+u(i,j,k-1,n))+q(i*dh,j*dh,k*dh,(n+1)*dt)/A;               
+             sum2(i,j,k) +=coeff(1)*u(i,j,k,n+1);
+             sum3(i,j,k) +=coeff(2)*u(i,j,k,n+1);              
+	    }
+
+      for (i=1; i<=x_N-1; i++)     
+	for (j=1; j<=y_N-1; j++)
+	  for(k=1;k<=z_N-1;k++)
+	    {
+              sum1(i,j,k)+=coeff(1)*u(i,j,k,n);    
+	      u(i,j,k,n+2)=(1-6.0*B)*u(i,j,k,n+1)-sum1(i,j,k) +u(i,j,k,0)*(pow(n+2,1-alpha)-pow(n+1,1-alpha))-u(i,j,k,n+1)*(pow(2,1-alpha)- pow(1,1-alpha))+B*(u(i+1,j,k,n+1)+u(i-1,j,k,n+1)+u(i,j+1,k,n+1)+u(i,j-1,k,n+1)+u(i,j,k+1,n+1)+u(i,j,k-1,n+1))+q(i*dh,j*dh,k*dh,(n+2)*dt)/A;            
+    sum3(i,j,k) +=coeff(1)*u(i,j,k,n+2);                  
+	    }
+
+       for (i=1; i<=x_N-1; i++)     
+	for (j=1; j<=y_N-1; j++)
+	  for(k=1;k<=z_N-1;k++)
+	    {
+              sum2(i,j,k)+=coeff(2)*u(i,j,k,n);    
+	      u(i,j,k,n+3)=(1-6.0*B)*u(i,j,k,n+2)-sum2(i,j,k) +u(i,j,k,0)*(pow(n+3,1-alpha)-pow(n+2,1-alpha))-u(i,j,k,n+2)*(pow(2,1-alpha)- pow(1,1-alpha))+B*(u(i+1,j,k,n+2)+u(i-1,j,k,n+2)+u(i,j+1,k,n+2)+u(i,j-1,k,n+2)+u(i,j,k+1,n+2)+u(i,j,k-1,n+2))+q(i*dh,j*dh,k*dh,(n+3)*dt)/A;                             
+	    }
+   
+        for (i=1; i<=x_N-1; i++)     
+	for (j=1; j<=y_N-1; j++)
+	  for(k=1;k<=z_N-1;k++)
+	    {
+              sum3(i,j,k)+=coeff(3)*u(i,j,k,n);    
+	      u(i,j,k,n+4)=(1-6.0*B)*u(i,j,k,n+3)-sum3(i,j,k) +u(i,j,k,0)*(pow(n+4,1-alpha)-pow(n+3,1-alpha))-u(i,j,k,n+3)*(pow(2,1-alpha)- pow(1,1-alpha))+B*(u(i+1,j,k,n+3)+u(i-1,j,k,n+3)+u(i,j+1,k,n+3)+u(i,j-1,k,n+3)+u(i,j,k+1,n+3)+u(i,j,k-1,n+3))+q(i*dh,j*dh,k*dh,(n+4)*dt)/A;                             
+	    }
+
+
+    }
+           
+  finish=clock();
+  
+  real time=1.0*(finish-begin)/CLOCKS_PER_SEC;
+     	
+  printf("x_N:  %d, t_N:  %d , timeusage is %6.2f seconds\n\n",x_N, t_N,time);
+     
+   		
+  real numer=0.0;
+  real exact =0.0;
+  real numer_exact=0.0;
+     	
+                    
+  for(i=1;i<=x_N-1;i++) 
+    for(j=1;j<=y_N-1;j++)
+      for(k=1;k<=z_N-1;k++)     
+	for(n=1;n<=t_N;n++) 
+	  {  
+	    numer +=u(i,j,k,n)*u(i,j,k,n);
+	    exact+=pow((n*dt)*(i*dh-L)*(j*dh-L)*(k*dh-L),4);
+	    numer_exact+= pow((u(i,j,k,n)-pow(((n*dt)*(i*dh-L)*(j*dh-L)*(k*dh-L)),2)),2);
+	  }
+     	
+  printf("norm of numerical solution                    %f  \n", sqrt(numer) );
+  printf("norm of exact solution                        %f  \n",  sqrt(exact) );
+  printf("norm of numerical solution-exact solution     %f\n",  sqrt(numer_exact));
+
+  _mm_free(u);    
+  _mm_free(coeff);
+  free(sum);
+  free(sum1);
+  free(sum2);
+  free(sum3);
+  _mm_free(outputbuffer);
+  
+  /*
+    FILE *fp;
+  
+    fp=fopen("result.txt","wt");
+    fprintf(fp,"---------baseline version----------\n");
+    fprintf(fp,"%d intervals in space, %d intervals in time \n\n",x_N, t_N);
+    fprintf(fp,"norm of numerical solution                    %f  \n", sqrt(numer));
+    fprintf(fp,"norm of exact solution                        %f  \n",  sqrt(exact) );
+    fprintf(fp,"norm of numerical solution-exact solution     %f\n",  sqrt(numer_exact));
+    fprintf(fp,"time usage is %f seconds\n",time);
+    fclose(fp);
+  */ 
+ 
+  return EXIT_SUCCESS;     
+}
+
+

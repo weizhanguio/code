@@ -1,0 +1,42 @@
+No Prologue was run  Wed Apr  9 11:31:16 CEST 2014 
+---------unroll 4---coef(x,t)  weizhang----------
+1000 intervals in space, 10000 intervals in time 
+
+unroll4: x_N:   1000, t_N:  10000   ,Norm_n:  3.160666e+03, timeusage is  35.21 seconds
+
+Start Epilogue v3.0.1 Wed Apr  9 11:31:53 CEST 2014 
+destination queue: workq
+clean up
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+End Epilogue v3.0.1 Wed Apr  9 11:32:00 CEST 2014 

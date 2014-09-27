@@ -1,0 +1,13 @@
+No Prologue was run  Fri Apr 11 21:45:57 CEST 2014 
+Start Epilogue v3.0.1 Fri Apr 11 21:46:01 CEST 2014 
+destination queue: workq
+clean up
+r8i3n11: vm.drop_caches = 3
+r8i3n12: vm.drop_caches = 3
+r8i3n11: vm.drop_caches = 3
+r8i3n12: vm.drop_caches = 3
+r8i3n11: Linux
+r8i3n11: Linux
+r8i3n12: Linux
+r8i3n12: Linux
+End Epilogue v3.0.1 Fri Apr 11 21:46:03 CEST 2014 

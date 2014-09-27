@@ -1,0 +1,295 @@
+No Prologue was run  Wed Apr 16 17:09:26 CEST 2014 
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 0, left:-1, right:16, down:-1, up:1, front: -1, back:4
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 8, left:-1, right:24, down:-1, up:9, front: 4, back:12
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 2, left:-1, right:18, down:1, up:3, front: -1, back:6
+The processor at position (0, 0, 2) has taskid 2
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 6, left:-1, right:22, down:5, up:7, front: 2, back:10
+The processor at position (0, 1, 2) has taskid 6
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 4, left:-1, right:20, down:-1, up:5, front: 0, back:8
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 20, left:4, right:-1, down:-1, up:21, front: 16, back:24
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 10, left:-1, right:26, down:9, up:11, front: 6, back:14
+The processor at position (0, 2, 2) has taskid 10
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 22, left:6, right:-1, down:21, up:23, front: 18, back:26
+The processor at position (1, 1, 2) has taskid 22
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 18, left:2, right:-1, down:17, up:19, front: -1, back:22
+The processor at position (1, 0, 2) has taskid 18
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 26, left:10, right:-1, down:25, up:27, front: 22, back:30
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 12, left:-1, right:28, down:-1, up:13, front: 8, back:-1
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 28, left:12, right:-1, down:-1, up:29, front: 24, back:-1
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 14, left:-1, right:30, down:13, up:15, front: 10, back:-1
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 16, left:0, right:-1, down:-1, up:17, front: -1, back:20
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 30, left:14, right:-1, down:29, up:31, front: 26, back:-1
+The processor at position (1, 3, 2) has taskid 30
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 24, left:8, right:-1, down:-1, up:25, front: 20, back:28
+The processor at position (1, 2, 0) has taskid 24
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 1, left:-1, right:17, down:0, up:2, front: -1, back:5
+The processor at position (0, 0, 1) has taskid 1
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 9, left:-1, right:25, down:8, up:10, front: 5, back:13
+The processor at position (0, 2, 1) has taskid 9
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 3, left:-1, right:19, down:2, up:-1, front: -1, back:7
+The processor at position (0, 0, 3) has taskid 3
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 7, left:-1, right:23, down:6, up:-1, front: 3, back:11
+The processor at position (0, 1, 3) has taskid 7
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 5, left:-1, right:21, down:4, up:6, front: 1, back:9
+The processor at position (0, 1, 1) has taskid 5
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 21, left:5, right:-1, down:20, up:22, front: 17, back:25
+The processor at position (1, 1, 1) has taskid 21
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 11, left:-1, right:27, down:10, up:-1, front: 7, back:15
+The processor at position (0, 2, 3) has taskid 11
+Number of tasks 32
+
+Number of tasks 32
+
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 27, left:11, right:-1, down:26, up:-1, front: 23, back:31
+The processor at position (1, 2, 3) has taskid 27
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 13, left:-1, right:29, down:12, up:14, front: 9, back:-1
+The processor at position (0, 3, 1) has taskid 13
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 29, left:13, right:-1, down:28, up:30, front: 25, back:-1
+The processor at position (1, 3, 1) has taskid 29
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 15, left:-1, right:31, down:14, up:-1, front: 11, back:-1
+The processor at position (0, 3, 3) has taskid 15
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 17, left:1, right:-1, down:16, up:18, front: -1, back:21
+The processor at position (1, 0, 1) has taskid 17
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 31, left:15, right:-1, down:30, up:-1, front: 27, back:-1
+The processor at position (1, 3, 3) has taskid 31
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 25, left:9, right:-1, down:24, up:26, front: 21, back:29
+The processor at position (1, 2, 1) has taskid 25
+Number of tasks 32
+
+The processor at position (0, 0, 0) has taskid 0
+Number of tasks 32
+
+The processor at position (0, 2, 0) has taskid 8
+Number of tasks 32
+
+Number of tasks 32
+
+Number of tasks 32
+
+The processor at position (0, 1, 0) has taskid 4
+Number of tasks 32
+
+The processor at position (1, 1, 0) has taskid 20
+Number of tasks 32
+
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 23, left:7, right:-1, down:22, up:-1, front: 19, back:27
+The processor at position (1, 1, 3) has taskid 23
+Number of tasks 32
+
+
+node_x: 2, node_y: 4,  node_z: 4
+taskid: 19, left:3, right:-1, down:18, up:-1, front: -1, back:23
+The processor at position (1, 0, 3) has taskid 19
+Number of tasks 32
+
+The processor at position (1, 2, 2) has taskid 26
+Number of tasks 32
+
+The processor at position (0, 3, 0) has taskid 12
+Number of tasks 32
+
+The processor at position (1, 3, 0) has taskid 28
+Number of tasks 32
+
+The processor at position (0, 3, 2) has taskid 14
+Number of tasks 32
+
+The processor at position (1, 0, 0) has taskid 16
+Number of tasks 32
+
+Number of tasks 32
+
+The processor at position (0, 3, 0), x_length 50, y_length 24, z_length 32, rank12
+The processor at position (0, 3, 1), x_length 50, y_length 24, z_length 32, rank13
+The processor at position (0, 1, 0), x_length 50, y_length 25, z_length 32, rank4
+The processor at position (0, 1, 1), x_length 50, y_length 25, z_length 32, rank5
+The processor at position (1, 2, 2), x_length 49, y_length 25, z_length 32, rank26
+The processor at position (1, 2, 3), x_length 49, y_length 25, z_length 32, rank27
+The processor at position (1, 2, 0), x_length 49, y_length 25, z_length 32, rank24
+The processor at position (1, 2, 1), x_length 49, y_length 25, z_length 32, rank25
+The processor at position (1, 0, 0), x_length 49, y_length 25, z_length 32, rank16
+The processor at position (0, 0, 1), x_length 50, y_length 25, z_length 32, rank1
+The processor at position (1, 0, 1), x_length 49, y_length 25, z_length 32, rank17
+The processor at position (0, 1, 2), x_length 50, y_length 25, z_length 32, rank6
+The processor at position (0, 0, 0), x_length 50, y_length 25, z_length 32, rank0
+The processor at position (1, 1, 2), x_length 49, y_length 25, z_length 32, rank22
+The processor at position (1, 3, 0), x_length 49, y_length 24, z_length 32, rank28
+The processor at position (0, 2, 0), x_length 50, y_length 25, z_length 32, rank8
+The processor at position (0, 1, 3), x_length 50, y_length 25, z_length 32, rank7
+The processor at position (0, 3, 2), x_length 50, y_length 24, z_length 32, rank14
+The processor at position (0, 2, 2), x_length 50, y_length 25, z_length 32, rank10
+The processor at position (1, 1, 3), x_length 49, y_length 25, z_length 32, rank23
+The processor at position (1, 3, 1), x_length 49, y_length 24, z_length 32, rank29
+The processor at position (0, 2, 1), x_length 50, y_length 25, z_length 32, rank9
+The processor at position (0, 0, 2), x_length 50, y_length 25, z_length 32, rank2
+The processor at position (0, 3, 3), x_length 50, y_length 24, z_length 32, rank15
+The processor at position (1, 0, 2), x_length 49, y_length 25, z_length 32, rank18
+The processor at position (0, 2, 3), x_length 50, y_length 25, z_length 32, rank11
+The processor at position (0, 0, 3), x_length 50, y_length 25, z_length 32, rank3
+The processor at position (1, 0, 3), x_length 49, y_length 25, z_length 32, rank19
+The processor at position (1, 3, 2), x_length 49, y_length 24, z_length 32, rank30
+The processor at position (1, 3, 3), x_length 49, y_length 24, z_length 32, rank31
+The processor at position (1, 1, 0), x_length 49, y_length 25, z_length 32, rank20
+The processor at position (1, 1, 1), x_length 49, y_length 25, z_length 32, rank21
+x_N: 100,y_N: 100, z_N: 100, t_N: 3000, numtasks 32,threads 8, total 256,time 10.52 secs, Norm_n: 5.395130e+04 time_com  0.33, time_pack  0.11
+
+Start Epilogue v3.0.1 Wed Apr 16 17:09:40 CEST 2014 
+destination queue: workq
+clean up
+r7i5n12: vm.drop_caches = 3
+r7i5n9: vm.drop_caches = 3
+r7i5n11: vm.drop_caches = 3
+r7i5n0: vm.drop_caches = 3
+r7i5n15: vm.drop_caches = 3
+r7i5n3: vm.drop_caches = 3
+r7i5n14: vm.drop_caches = 3
+r7i5n2: vm.drop_caches = 3
+r7i5n8: vm.drop_caches = 3
+r7i5n4: vm.drop_caches = 3
+r7i5n13: vm.drop_caches = 3
+r7i5n5: vm.drop_caches = 3
+r7i5n1: vm.drop_caches = 3
+r7i5n6: vm.drop_caches = 3
+r7i5n7: vm.drop_caches = 3
+r7i5n10: vm.drop_caches = 3
+r7i5n12: vm.drop_caches = 3
+r7i5n0: vm.drop_caches = 3
+r7i5n15: vm.drop_caches = 3
+r7i5n11: vm.drop_caches = 3
+r7i5n3: vm.drop_caches = 3
+r7i5n9: vm.drop_caches = 3
+r7i5n8: vm.drop_caches = 3
+r7i5n13: vm.drop_caches = 3
+r7i5n2: vm.drop_caches = 3
+r7i5n4: vm.drop_caches = 3
+r7i5n6: vm.drop_caches = 3
+r7i5n14: vm.drop_caches = 3
+r7i5n5: vm.drop_caches = 3
+r7i5n10: vm.drop_caches = 3
+r7i5n1: vm.drop_caches = 3
+r7i5n7: vm.drop_caches = 3
+r7i5n0: Linux
+r7i5n0: Linux
+r7i5n8: Linux
+r7i5n8: Linux
+r7i5n11: Linux
+r7i5n11: Linux
+r7i5n10: Linux
+r7i5n10: Linux
+r7i5n9: Linux
+r7i5n9: Linux
+r7i5n2: Linux
+r7i5n2: Linux
+r7i5n12: Linux
+r7i5n12: Linux
+r7i5n3: Linux
+r7i5n13: Linux
+r7i5n3: Linux
+r7i5n13: Linux
+r7i5n4: Linux
+r7i5n7: Linux
+r7i5n7: Linux
+r7i5n4: Linux
+r7i5n6: Linux
+r7i5n6: Linux
+r7i5n1: Linux
+r7i5n1: Linux
+r7i5n15: Linux
+r7i5n15: Linux
+r7i5n14: Linux
+r7i5n14: Linux
+r7i5n5: Linux
+r7i5n5: Linux
+End Epilogue v3.0.1 Wed Apr 16 17:09:43 CEST 2014 

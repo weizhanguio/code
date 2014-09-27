@@ -1,0 +1,42 @@
+No Prologue was run  Wed Apr  9 12:08:52 CEST 2014 
+---------baseline version---coef(t)-------
+4000 intervals in space, 40000 intervals in time 
+
+x_N:   4000, t_N:  40000   ,Norm_n:  1.264709e+04, timeusage is 3607.48 seconds
+
+Start Epilogue v3.0.1 Wed Apr  9 13:09:18 CEST 2014 
+destination queue: workq
+clean up
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: vm.drop_caches = 3
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+r6i6n3: Linux
+End Epilogue v3.0.1 Wed Apr  9 13:09:25 CEST 2014 

@@ -1,0 +1,43 @@
+No Prologue was run  Wed Apr  9 14:16:42 CEST 2014 
+Number of MPI procs=16
+---------MPI non-blocking AVX Version----------
+2000 intervals in space, 20000 intervals in time 
+
+x_N: 2000, t_N: 20000, numtasks 16  ,Norm_n: 6.322857e+03, timeusage is  10.55 seconds
+
+Start Epilogue v3.0.1 Wed Apr  9 14:16:54 CEST 2014 
+destination queue: workq
+clean up
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: vm.drop_caches = 3
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+r6i5n7: Linux
+End Epilogue v3.0.1 Wed Apr  9 14:17:01 CEST 2014 
